@@ -1,0 +1,15 @@
+.project {
+  background-color: #884dff !important;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.project-text-wrapper {
+  margin: 1em 5em;
+  padding: 0.5em 2em;
+  text-align: left;
+}

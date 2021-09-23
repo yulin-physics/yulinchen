@@ -1,0 +1,72 @@
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+  color: #989898;
+}
+
+.text-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  padding: 0 0;
+  margin: 0.2em 0 0.2em;
+  font-size: 8vw;
+  font-weight: 900;
+  background-color: #fff;
+  color: #000;
+  display: block;
+}
+
+h3 {
+  margin: 0.2em 0 0.2em;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #ff8000; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 1em auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+.round_pic {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+hr {
+  display: block;
+  margin: 0.5em 0.5em;
+  overflow: hidden;
+  border-width: 1px;
+}
