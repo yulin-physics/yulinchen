@@ -1,14 +1,19 @@
+.header-background {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  text-align: center;
+}
+
 h2 {
   font-family: "Roboto", sans-serif;
   font-size: 2em;
   color: #989898;
-}
-
-.text-box {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 h1 {
@@ -16,8 +21,8 @@ h1 {
   margin: 0.2em 0 0.2em;
   font-size: 8vw;
   font-weight: 900;
-  background-color: #fff;
-  color: #000;
+  opacity: 0.8;
+  color: #fff;
   display: block;
 }
 
@@ -30,7 +35,8 @@ h3 {
 
 .typewriter {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid #ff8000; /* The typwriter cursor */
+  border-right: 0.15em solid #33ff33; /* The typwriter cursor */
+  opacity: 80%;
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 1em auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.15em; /* Adjust as needed */
@@ -54,7 +60,7 @@ h3 {
     border-color: transparent;
   }
   50% {
-    border-color: orange;
+    border-color: #fff;
   }
 }
 
@@ -69,4 +75,21 @@ hr {
   margin: 0.5em 0.5em;
   overflow: hidden;
   border-width: 1px;
+}
+
+.glow {
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
 }
