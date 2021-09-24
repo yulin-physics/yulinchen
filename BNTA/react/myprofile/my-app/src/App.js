@@ -8,7 +8,7 @@ import Contact from './contact/Contact';
 import { Layout, Card} from 'antd';
 import Icon from '@ant-design/icons';
 import Header from './header/Header';
-import svg_pic from './divider/divider.svg'
+
 import './divider/divider.css'
 
 const { Footer, Content } = Layout;
@@ -20,20 +20,10 @@ function App() {
     
     <NavBar />
 
-  <Header isTwoRole={false} role1={"Software Engineer"}></Header>
+  <Header role1={"Full Stack Developer"}></Header>
 
-  {/* <Card  style={{ width: 240 }} cover={<Divider />} bordered={true}/> */}
-  <div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">Fluid jumbotron</h1>
-    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-    <img src={svg_pic} /> 
-    <object type="image/svg+xml" data={svg_pic} ></object>
-    <Divider />
-    
-  </div>
-</div>
 
+ <Divider />
 
  
     <About id="about_here" />
