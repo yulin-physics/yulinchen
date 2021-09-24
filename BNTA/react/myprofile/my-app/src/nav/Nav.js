@@ -12,10 +12,10 @@ function NavBar(props){
       
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="nav navbar-nav">
-      <li class="nav-item active"><a class="nav-link active" aria-current="page" href="#about">About Me</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      <li class="nav-item active"><a class="nav-link active" href={props.about}>About Me</a></li>
+      <li class="nav-item"><a class="nav-link" href={props.projects}>Projects</a></li>
+      <li class="nav-item"><a class="nav-link" href={props.blog}>Blog</a></li>
+      <li class="nav-item"><a class="nav-link" href={props.contact}>Contact</a></li>
     </ul>
   </div>
   </div>

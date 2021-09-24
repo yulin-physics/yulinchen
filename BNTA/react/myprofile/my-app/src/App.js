@@ -5,20 +5,18 @@ import About from './about/About';
 import Project from './project/Project';
 import Divider from './divider/Divider';
 import Contact from './contact/Contact';
-import { Layout, Card} from 'antd';
-import Icon from '@ant-design/icons';
+import Card from './about/Card';
 import Header from './header/Header';
+import flappy_bird from './resource/flappy_bird.png';
+import js_icon from './resource/java-script.png';
 
-import './divider/divider.css'
-
-const { Footer, Content } = Layout;
 
 function App() {
   return (
     <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100"
     tabindex="0">
     
-    <NavBar />
+    <NavBar about="#about"/>
 
   <Header role1={"Full Stack Developer"}></Header>
 
@@ -26,7 +24,19 @@ function App() {
  <Divider />
 
  
-    <About id="about_here" />
+    <About  id="about" />
+
+    <div className="row">
+      <div className="col-sm-6" align="center">
+      <Card title="Technical Skills" 
+       imageSrc={js_icon} skill1="JavaScipt"/>
+      </div>
+      <div className="col-sm-6" align="center">
+      <Card title="Hobbies" />
+      </div>
+    </div>
+    
+   
   
 {/* 
     <div>
