@@ -1,16 +1,21 @@
 import './nav.css';
 
-function SideNav(props){
+function NavBar(props){
     return(
-        <div className="sticky">
-  <div id="mySidenav" class="sidenav">
-  <a href={props.about} id="about">About</a>
-  <a href={props.blog} id="blog">Blog</a>
-  <a href={props.projects} id="projects">Projects</a>
-  <a href={props.contacts} id="contact">Contact</a>
-</div>
-</div>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li>
+    </ul>
+  </div>
+</nav>
     );
 }
 
-export default SideNav;
+export default NavBar;
