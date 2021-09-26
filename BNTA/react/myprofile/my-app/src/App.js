@@ -9,6 +9,13 @@ import Card from './about/Card';
 import Header from './header/Header';
 import flappy_bird from './resource/flappy_bird.png';
 import js_icon from './resource/java-script.png';
+import java_icon from './resource/java.png';
+import python_icon from './resource/python.png';
+import postgres_icon from './resource/postgresql.png';
+import couch_icon from './resource/couchdb.png';
+
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
 
 
 function App() {
@@ -16,7 +23,7 @@ function App() {
     <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100"
     tabindex="0">
     
-    <NavBar about="#about"/>
+    <NavBar about="#about" projects="#projects"/>
 
   <Header role1={"Full Stack Developer"}></Header>
 
@@ -28,12 +35,44 @@ function App() {
 
     <div className="row">
       <div className="col-sm-6" align="center">
-      <Card title="Technical Skills" 
-       imageSrc={js_icon} skill1="JavaScipt"/>
+      <Card title="Programming Languages" 
+       imageSrc1={js_icon} skill1="JavaScipt"
+       imageSrc2={java_icon} skill2="Java"
+       imageSrc3={python_icon} skill3="Python"
+       other="Other web technologies: HTML & CSS"
+       framework="Frameworks: REACT" 
+       protocol="Protocols: HTTP, REST API" />
       </div>
+
       <div className="col-sm-6" align="center">
-      <Card title="Hobbies" />
+      <Card title="Databases" 
+      imageSrc1={postgres_icon} skill1="PostgreSQL"
+      imageSrc2={couch_icon} skill2="Apache CounchDB" />
       </div>
+
+      <Divider />
+
+      <section id="projects">
+        <div className="container">
+          <h1 className="title">Projects</h1>
+  
+          <VerticalTimeline>
+          
+          <Project title="Games Site Frontend Project" place="Bright Network" 
+          date="July 2021"
+          description="Worked in a team of 4 where we had one afternoon and created a games site under time pressure. I made a modified version off flappy bird based off a Youtube tutorial, improved CSS styling, changed JavaScript parameters and added the start button. Our group was the final winner of the hackathon"
+          
+          imageSrc={flappy_bird}
+          
+          tag1="HTML"
+          tag2="CSS"
+          tag3="JavaScript"/>
+
+
+        
+           </ VerticalTimeline>
+        </div>
+      </section>
     </div>
     
    

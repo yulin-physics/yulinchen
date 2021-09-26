@@ -4,6 +4,7 @@
   border-radius: 5px;
   background-color: whitesmoke;
   margin: 3rem;
+  padding: 2rem;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -11,10 +12,10 @@
   box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.3);
 }
 
-.contents-card {
-  padding: 5%;
+.row .col-sm-6 img {
+  width: 4rem;
 }
 
-.row .col-sm-6 img {
-  width: 5rem;
+.row-custom {
+  margin: 2%;
 }

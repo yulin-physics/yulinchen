@@ -6,17 +6,52 @@ const Card = (props) => {
        <div className="card" styles="width:18rem;">
             <h5 className="card-title">{props.title}</h5>
            <div className="card-body">
-                <div class="row align-self-center">
-                    <div class="col-sm-6 ">
-                    <img src={props.imageSrc} class="rounded img-fluid img-thumbnail" />
+               
+                <div class="row align-items-center row-custom">
+                    <div class="col-sm-6">
+                    <img src={props.imageSrc1} class="rounded img-fluid img-responsive " />
                     </div>
                     <div class="col-sm-6 text-center">
-                    <h5 className="card-text text-center">{props.skill1}</h5>
+                    <h5 className="card-text">{props.skill1}</h5>
                     </div>
                 </div>
              
-               
-               <p className="card-text">{props.text}</p><a href="#" className="btn btn-primary">{props.buttonText}</a>
+                <div class="row align-items-center row-custom">
+                    <div class="col col-sm-6 ">
+                    <img src={props.imageSrc2} class="rounded img-fluid img-responsive " />
+                    </div>
+                    <div class="col-sm-auto text-center">
+                    <h5 className="card-text text-center">{props.skill2}</h5>
+                    </div>
+                </div>
+
+                <div class="row align-items-center row-custom">
+                    <div class="col col-sm-6 ">
+                    <img src={props.imageSrc3} class="rounded img-fluid img-responsive " />
+                    </div>
+                    <div class="col-sm-auto text-center">
+                    <h5 className="card-text text-center">{props.skill3}</h5>
+                    </div>
+                </div>
+
+                
+                <div class="row align-items-center row-custom">
+                    <div class="col-sm-auto text-center">
+                   {props.other}
+                    </div>
+                </div>
+
+                <div class="row align-items-center row-custom">
+                    <div class="col-sm-auto text-center">
+                   {props.framework}
+                    </div>
+                </div>
+
+                <div class="row align-items-center row-custom">
+                    <div class="col-sm-auto text-center">
+                   {props.protocol}
+                    </div>
+                </div>
              
            </div>
        </div>
