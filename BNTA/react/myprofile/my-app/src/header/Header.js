@@ -20,41 +20,28 @@ function HeaderName(props){
       }
 
       const textLines = [
-        `Hey there, this page is about me`,
-        ':)'
+        props.role1,
+        props.role2
       ]
      
 
     return (
       
     <header>
-     <br />
-     <br />
-     <br />
-     <br />
-     <br />
-     <br />
-     <h2> 
-       <Typed strings={textLines} typeSpeed={60}  backDelay={1100}backSpeed={30} loop />
-       </h2>
 
-      <br />
-     <br />
      <br />
       <div class="p-5 text-center bg-gradient-primary text-white" >
 
-        <motion.div variants={container} initial="hidden" animate="show">
-        
-        <img src={pic} alt="profile picture" className="avatar"  />
 
-        <h1 class="mb-3">Yulin Chen</h1>
-        <Divider style={{'background-color':'#fff',  'box-shadow':'5px 10px #000001'  }}/>
-        
-        <h3 class="mb-3">{props.role1}</h3>
-       </motion.div>
-       <br />
-       <br />
-       <br />
+        <h1 class="mb-3"><span style={{'color':"#fdd701"}}>$ </span>Yulin Chen</h1>
+        <div class="mb-3"> 
+        <a href="https://github.com/yulin-physics" class="fa fa-github"></a>
+        <a href="https://uk.linkedin.com/in/yulinphysics" class="fa fa-linkedin"></a>
+        </div>
+        <h3 class="mb-3">
+        <Typed strings={textLines} typeSpeed={60}  backDelay={1100}backSpeed={30} loop />
+       </h3>
+        <img src={pic} alt="profile picture" className="avatar"  />
       </div>
 
     </header>

@@ -25,7 +25,7 @@ function App() {
     
     <NavBar about="#about" projects="#projects"/>
 
-  <Header role1={"Full Stack Developer"}></Header>
+  <Header role1={"Software Developer"} role2={"Physics Graduate"}></Header>
 
 
  <Divider />
