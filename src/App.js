@@ -9,6 +9,8 @@ import Card from './about/Card';
 import Header from './header/Header';
 import flappy_bird from './resource/flappy_bird.png';
 import study_maths from './resource/study-maths-smarter.png';
+import bootcamp from './resource/bootcamp.png';
+import car_rental from './resource/car-rental.png';
 import js_icon from './resource/java-script.png';
 import java_icon from './resource/java.png';
 import python_icon from './resource/python.png';
@@ -79,6 +81,8 @@ function App() {
           date="September 2021"
           description="Bootcamp is a website with a collection of categorised live courses, where users can add courses to wishlist and submit feedback"
           
+          imageSrc={bootcamp}
+
           tag1="Java"
           tag2="Spring Boot"
           tag3="PostgreSQL"/>
@@ -86,6 +90,8 @@ function App() {
           <Project title="Car Rental CLI Tool" place="Bright Network" 
           date="August 2021"
           description="Created a car rental command line management system with tailored options for manager and customers. Managers can add cars, remove cars, check current renting status, users can borrow and return cars"
+          
+          imageSrc={car_rental}
           
           tag1="Java"
           tag2="Spring Boot"
