@@ -9,7 +9,9 @@ function About(props){
       };
 
     return(
-        <Card id={props.id} title="FACTS ABOUT ME" className="card-title" style={{ backgroundColor: '#aaaaaa' }}>
+      <>
+      <h1 id={props.id} style={{ backgroundColor: '#fff', marginTop:'5rem'}}> ABOUT ME</h1>
+    <Card>
     <Card.Grid hoverable={false} style={gridStyle}>Imperial College London MSci Physics degree</Card.Grid>
     <Card.Grid style={gridStyle}>Took Japanese evening classes for 4 years</Card.Grid>
     <Card.Grid style={gridStyle}>Belly Dancing Society President</Card.Grid>
@@ -20,7 +22,7 @@ function About(props){
     <Card.Grid style={gridStyle}>Completed Duke of Edinburgh Bronze and Silver Award</Card.Grid>
     <Card.Grid style={gridStyle}>Founder of 93% Club Imperial</Card.Grid>
   </Card>
-
+      </>
     )
 }
 

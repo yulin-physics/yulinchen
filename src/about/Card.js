@@ -34,6 +34,14 @@ const Card = (props) => {
                     </div>
                 </div>
 
+                <div class="row align-items-center row-custom">
+                    <div class="col col-sm-6 ">
+                    <img src={props.imageSrc4} class="rounded img-fluid img-responsive " />
+                    </div>
+                    <div class="col-sm-auto text-center">
+                    <h5 className="card-text text-center">{props.skill4}</h5>
+                    </div>
+                </div>
                 
                 <div class="row align-items-center row-custom">
                     <div class="col-sm-auto text-center">
