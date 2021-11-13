@@ -5,7 +5,7 @@ function NavBar(props){
 <nav class="navbar navbar-custom navbar-fixed-top navbar-expand-lg">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#header">Yulin</a>
+      <a class="navbar-brand" href="">Yulin</a>
 
     </div>
 
@@ -19,6 +19,11 @@ function NavBar(props){
     </ul>
   </div>
   </div>
+
+  <div class="hamburgerMenu">
+    {/* //TODO: hamburger menu for small screen
+    //hamburger */}
+</div>
 </nav>
     );
 }

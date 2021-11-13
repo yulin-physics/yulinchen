@@ -38,3 +38,26 @@
   top: 200px;
   background-color: #555;
 }
+
+@media only screen and (min-width: 701px) {
+  /* hide the hamburger */
+  .hamburgerMenu {
+    display: none;
+  }
+  /* show all the nav-buttons */
+  .nav-button {
+    display: block;
+  }
+}
+/* if browser window is small (max-width) */
+
+@media only screen and (max-width: 700px) {
+  /* show everything with the hamburger class */
+  .hamburgerMenu {
+display: block;
+  }
+  /* hide all the nav-buttons */
+  .nav-button {
+    display: none;
+  }
+}
