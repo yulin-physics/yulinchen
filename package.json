@@ -1,6 +1,6 @@
 {
-  "homepage": "http://yulin-physics.github.io",
-  "name": "my-app",
+  "homepage": "http://yulin-physics.github.io/yulinchen",
+  "name": "yulinchen",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
