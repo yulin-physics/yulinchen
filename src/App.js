@@ -46,7 +46,7 @@ function App() {
        imageSrc3={python_icon} skill3="Python"
        imageSrc4={golang_icon} skill4="Go"
        other="Other web technologies: HTML & CSS, REACT, REDUX, Spring Boot"
-       protocol="Protocols: HTTP, REST API" />
+       protocol="Protocols: HTTP, REST API, GraphQL" />
       </div>
 
       <div className="col-sm-6" align="center">
