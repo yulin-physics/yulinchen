@@ -1,13 +1,6 @@
-## Personal Profile Page
-#### First React Project
-This project was built with REACT framework, a one page website about me.
-
-∵*.•´¸.•*´✶´♡\
-° ☆ °˛*˛☆_Π______*˚☆*\
-˚ ˛★˛•˚*/______/ ~⧹。˚˚\
-˚ ˛•˛•˚ ｜ 田田 ｜門｜ ˚*\
-🌷╬╬🌷╬╬🌷╬╬🌷╬╬🌷 
-
+## Personal Profile Page (First React Project)
+# http://yulin-physics.github.io/yulinchen
+This project was built with REACT framework, a one page website about me.    
 
 ## Available Scripts
 
