@@ -1,23 +1,8 @@
 import pic from './profile_pic.png';
 import './header.css';
-import { Layout, Divider, Avatar, Image } from 'antd';
-import { motion } from "framer-motion";
 import Typed from 'react-typed';
 
-const { Header } = Layout;
-
 function HeaderName(props){
-
-    const container = {
-        hidden: { opacity: 0 },
-        show: {
-          opacity: 1,
-          transition: {
-            delay: 6,
-           ease: [0.17, 0.67, 0.83, 0.67] 
-          }
-        }
-      }
 
       const textLines = [
         props.role1,

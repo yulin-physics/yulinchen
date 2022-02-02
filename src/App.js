@@ -18,7 +18,7 @@ import golang_icon from './resource/golang.png';
 import postgres_icon from './resource/postgresql.png';
 import couch_icon from './resource/couchdb.png';
 
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import { VerticalTimeline}  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
 
