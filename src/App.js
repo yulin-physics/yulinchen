@@ -27,7 +27,7 @@ function App() {
     <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100"
     tabindex="0">
     
-    <NavBar about="#about" projects="#projects" contact="#contact" blog="https://spinningtop862693762.wordpress.com/blog/"/>
+    <NavBar about="#about" projects="#projects" contact="#contact" blog="https://dev.to/yulin"/>
 
   <Header role1={"Software Developer"} role2={"Physics Graduate"}></Header>
 
@@ -45,8 +45,8 @@ function App() {
        imageSrc2={java_icon} skill2="Java"
        imageSrc3={python_icon} skill3="Python"
        imageSrc4={golang_icon} skill4="Go"
-       other="Other web technologies: HTML & CSS, REACT, REDUX, Spring Boot"
-       protocol="Protocols: HTTP, REST API, GraphQL" />
+       other="Other web technologies: HTML & CSS, REACT, REDUX, Spring Boot, REST API, GraphQL, Google Cloud"
+       protocol="Protocols: HTTP, TCP" />
       </div>
 
       <div className="col-sm-6" align="center">
