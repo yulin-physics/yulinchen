@@ -29,7 +29,7 @@ This project was built with REACT framework, an one page website about me.
         "scripts": {
             ...   
             "predeploy": "npm run build",
-            "deploy": "gh-pages -b main -d build"
+            "deploy": "gh-pages -d build"
             }
         ...
 
