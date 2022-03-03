@@ -1,4 +1,4 @@
-name: update gh-page
+name: Update gh-page
 on:
   push:
     branches:
@@ -11,9 +11,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
+      - name: Checkout
         uses: actions/checkout@v2
-      - name: setup node
+      - name: Setup node
         uses: actions/setup-node@v1
         with:
           node-version: "10.x"
@@ -22,7 +22,7 @@ jobs:
         env:
           CI: false 
       - run: npm test --if-present
-      - name: deploy
+      - name: Deploy
         uses: crazy-max/ghaction-github-pages@v1
         with:
           target_branch: gh-pages
