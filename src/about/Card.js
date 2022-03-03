@@ -7,56 +7,56 @@ const Card = (props) => {
             <h5 className="card-title">{props.title}</h5>
            <div className="card-body">
                
-                <div class="row align-items-center row-custom">
-                    <div class="col-sm-6">
-                    <img src={props.imageSrc1} class="rounded img-fluid img-responsive " />
+                <div className="row align-items-center row-custom">
+                    <div className="col-sm-6">
+                    <img alt="tech stack one" src={props.imageSrc1} className="rounded img-fluid img-responsive " />
                     </div>
-                    <div class="col-sm-6 text-center">
+                    <div className="col-sm-6 text-center">
                     <h5 className="card-text">{props.skill1}</h5>
                     </div>
                 </div>
              
-                <div class="row align-items-center row-custom">
-                    <div class="col col-sm-6 ">
-                    <img src={props.imageSrc2} class="rounded img-fluid img-responsive " />
+                <div className="row align-items-center row-custom">
+                    <div className="col col-sm-6 ">
+                    <img alt="tech stack two" src={props.imageSrc2} className="rounded img-fluid img-responsive " />
                     </div>
-                    <div class="col-sm-auto text-center">
+                    <div className="col-sm-auto text-center">
                     <h5 className="card-text text-center">{props.skill2}</h5>
                     </div>
                 </div>
 
-                <div class="row align-items-center row-custom">
-                    <div class="col col-sm-6 ">
-                    <img src={props.imageSrc3} class="rounded img-fluid img-responsive " />
+                <div className="row align-items-center row-custom">
+                    <div className="col col-sm-6 ">
+                    <img alt="tech stack three" src={props.imageSrc3} className="rounded img-fluid img-responsive " />
                     </div>
-                    <div class="col-sm-auto text-center">
+                    <div className="col-sm-auto text-center">
                     <h5 className="card-text text-center">{props.skill3}</h5>
                     </div>
                 </div>
 
-                <div class="row align-items-center row-custom">
-                    <div class="col col-sm-6 ">
-                    <img src={props.imageSrc4} class="rounded img-fluid img-responsive " />
+                <div className="row align-items-center row-custom">
+                    <div className="col col-sm-6 ">
+                    <img alt="tech stack four" src={props.imageSrc4} className="rounded img-fluid img-responsive " />
                     </div>
-                    <div class="col-sm-auto text-center">
+                    <div className="col-sm-auto text-center">
                     <h5 className="card-text text-center">{props.skill4}</h5>
                     </div>
                 </div>
                 
-                <div class="row align-items-center row-custom">
-                    <div class="col-sm-auto text-center">
+                <div className="row align-items-center row-custom">
+                    <div className="col-sm-auto text-center">
                    {props.other}
                     </div>
                 </div>
 
-                <div class="row align-items-center row-custom">
-                    <div class="col-sm-auto text-center">
+                <div className="row align-items-center row-custom">
+                    <div className="col-sm-auto text-center">
                    {props.framework}
                     </div>
                 </div>
 
-                <div class="row align-items-center row-custom">
-                    <div class="col-sm-auto text-center">
+                <div className="row align-items-center row-custom">
+                    <div className="col-sm-auto text-center">
                    {props.protocol}
                     </div>
                 </div>

@@ -17,6 +17,8 @@ import python_icon from './resource/python.png';
 import golang_icon from './resource/golang.png';
 import postgres_icon from './resource/postgresql.png';
 import couch_icon from './resource/couchdb.png';
+import mongo_icon from './resource/mongoDB.png';
+import cloud_icon from './resource/cloud.png'
 
 import { VerticalTimeline}  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
@@ -45,14 +47,16 @@ function App() {
        imageSrc2={java_icon} skill2="Java"
        imageSrc3={python_icon} skill3="Python"
        imageSrc4={golang_icon} skill4="Go"
-       other="Other web technologies: HTML & CSS, REACT, REDUX, Spring Boot, REST API, GraphQL, Google Cloud"
-       protocol="Protocols: HTTP, TCP" />
+       other="Other web technologies: HTML & CSS, REACT, REDUX, Spring Boot, REST API, GraphQL, Google Cloud, FileZilla"
+       protocol="Protocols: HTTP, TCP, FTTP" />
       </div>
 
       <div className="col-sm-6" align="center">
       <Card title="Databases" 
       imageSrc1={postgres_icon} skill1="PostgreSQL"
-      imageSrc2={couch_icon} skill2="Apache CounchDB" />
+      imageSrc2={couch_icon} skill2="Apache CounchDB"
+      imageSrc3={mongo_icon} skill3="MongoDB"
+      imageSrc4={cloud_icon}/>
       </div>
     </div>
     </div>

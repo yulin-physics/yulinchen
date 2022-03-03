@@ -17,7 +17,7 @@ function Project(props){
               </h3>
               <h4 className="vertical-timeline-element-subtitle">{props.place}</h4>
               <p>{props.description}</p>
-              <img src={props.imageSrc} className="timeline-img"/>
+              <img alt="work experience timeline" src={props.imageSrc} className="timeline-img"/>
               <p>
                 <span className="button is-rounded is-small is-static">{props.tag1}</span>{" "}
                 <span className="button is-rounded is-small is-static">{props.tag2}</span>{" "}

@@ -1,12 +1,12 @@
 .navbar-custom {
-  background-color: #8d8782;
+  background-color: #838996;
 }
 
 .navbar-custom a.navbar-brand {
   color: #555;
 }
 .navbar-custom li a {
-  color: #41413f;
+  color: #000000;
 }
 
 .navbar-custom li a:hover {

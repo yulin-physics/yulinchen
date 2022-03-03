@@ -15,18 +15,18 @@ function HeaderName(props){
     <header>
 
      <br />
-      <div class="p-5 text-center bg-gradient-primary text-white" >
+      <div className="p-5 text-center bg-gradient-primary text-white" >
 
 
-        <h1 class="mb-3"><span style={{'color':"#fdd701"}}>$ </span>Yulin Chen</h1>
-        <div class="mb-3"> 
-        <a href="https://github.com/yulin-physics" class="fa fa-github"></a>
-        <a href="https://uk.linkedin.com/in/yulinphysics" class="fa fa-linkedin"></a>
+        <h1 className="mb-3"><span style={{'color':"#fdd701"}}>$ </span>Yulin Chen</h1>
+        <div className="mb-3"> 
+        <a href="https://github.com/yulin-physics" className="fa fa-github"></a>
+        <a href="https://uk.linkedin.com/in/yulinphysics" className="fa fa-linkedin"></a>
         </div>
-        <h3 class="mb-3">
+        <h3 className="mb-3">
         <Typed strings={textLines} typeSpeed={60}  backDelay={1100}backSpeed={30} loop />
        </h3>
-        <img src={pic} alt="profile picture" className="avatar"  />
+        <img src={pic} alt="profile" className="avatar"  />
       </div>
 
     </header>
