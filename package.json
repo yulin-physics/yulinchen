@@ -1,8 +1,8 @@
 {
-  "homepage": "http://yulin-physics.github.io/yulinchen",
+  "homepage": "https://yulin-physics.github.io/yulinchen",
   "name": "yulinchen",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/user-event": "^12.8.3",
