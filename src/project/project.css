@@ -44,8 +44,8 @@
   height: calc(100% - 16px) !important;
 }
 
-.vertical-timeline{
-  overflow:auto;
+.vertical-timeline {
+  overflow: auto;
 }
 
 .vertical-timeline--animate .vertical-timeline-element-content.bounce-in {
@@ -61,7 +61,7 @@
   margin: 1rem;
   height: 20rem;
   border-radius: 4px;
-  float:center;
+  float: center;
 }
 
 .vertical-timeline-element-date-custom {

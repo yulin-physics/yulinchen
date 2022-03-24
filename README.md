@@ -2,7 +2,7 @@
 
 # https://yulin-physics.github.io/yulinchen
 
-This project was built with REACT framework, an one page website about me. Showcasing projects I was working on between July and September 2021.
+This project was built with REACT framework, an one page website about me. Showcasing projects I was working on between July and October 2021.
 
 ## Installations
 

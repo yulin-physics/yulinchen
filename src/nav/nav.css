@@ -1,3 +1,13 @@
+#git-repo {
+  display: inline;
+  float: right;
+  background: none;
+  padding: 0 0 0 0;
+  border-radius: 50%;
+  height: 1em;
+  width: 1em;
+}
+
 .navbar-custom {
   background-color: #838996;
 }
@@ -54,7 +64,7 @@
 @media only screen and (max-width: 700px) {
   /* show everything with the hamburger class */
   .hamburgerMenu {
-display: block;
+    display: block;
   }
   /* hide all the nav-buttons */
   .nav-button {
