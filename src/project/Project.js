@@ -11,7 +11,9 @@ function Project(props) {
       dateClassName="vertical-timeline-element-date-custom"
       iconStyle={{ background: "#f0e9dc" }}
     >
-      <h3 className="vertical-timeline-element-title">{props.title}</h3>
+      <h3 className="vertical-timeline-element-title">
+        <a href={props.link}>{props.title}</a>
+      </h3>
       <h4 className="vertical-timeline-element-subtitle">{props.place}</h4>
       <p>{props.description}</p>
       <img

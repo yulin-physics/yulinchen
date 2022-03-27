@@ -1,8 +1,8 @@
-## Personal Profile Page (First React Project)
+# Personal Profile Page (First React Project)
 
 # https://yulin-physics.github.io/yulinchen
 
-This project was built with REACT framework, an one page website about me. Showcasing projects I was working on between July and October 2021.
+This project was built with REACT framework, an one page website about me. Showcasing projects I was working on between July and October 2021. It has a lot of css not in use, needs some clean up of the code.
 
 ## Installations
 
@@ -61,3 +61,9 @@ Launches the test runner in the interactive watch mode.
 `npm run build`  
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
+
+## References
+
+<a href="https://css-tricks.com/a-dark-mode-toggle-with-react-and-themeprovider/"> A Dark Mode Toggle with React and ThemeProvider </a>
+
+<a href="https://dev.to/matjones/how-to-embed-your-dev-to-blog-in-your-personal-website-4l81"> How to Embed Your Dev.to Blog in Your Personal Website </a>

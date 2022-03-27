@@ -3,14 +3,14 @@ import Toggle from "./toggle";
 import React, { useState } from "react";
 
 function NavBar(props) {
-  const [theme, setTheme] = useState("light");
-  const toggleTheme = () => {
-    if (theme === "light") {
-      setTheme("dark");
-    } else {
-      setTheme("light");
-    }
-  };
+  // const [theme, setTheme] = useState("light");
+  // const toggleTheme = () => {
+  //   if (props.theme === "light") {
+  //     setTheme("dark");
+  //   } else {
+  //     setTheme("light");
+  //   }
+  // };
   return (
     <nav className="navbar navbar-custom navbar-fixed-top navbar-expand-lg">
       <div className="container-fluid">
@@ -44,7 +44,7 @@ function NavBar(props) {
             </li>
           </ul>
 
-          <Toggle theme={theme} toggleTheme={toggleTheme} />
+          <Toggle theme={props.theme} toggleTheme={props.toggleTheme} />
 
           <a
             href="https://github.com/yulin-physics/yulinchen"

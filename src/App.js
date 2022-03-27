@@ -23,15 +23,22 @@ import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "./theme";
-import { GlobalStyles } from "./global";
+import { createGlobalStyle } from "styled-components";
 import React, { useState } from "react";
 
 function App() {
   const [theme, setTheme] = useState("light");
+  const toggleTheme = () => {
+    if (theme === "light") {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+  };
   return (
-    <ThemeProvider theme={theme === "light" ? darkTheme : darkTheme}>
+    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <>
-        {/* <GlobalStyles theme={theme}/> */}
+        <GlobalStyles />
         <div
           data-bs-spy="scroll"
           data-bs-target="#navbar"
@@ -44,6 +51,7 @@ function App() {
             contact="#contact"
             blog="https://dev.to/yulin"
             theme={theme}
+            toggleTheme={toggleTheme}
           />
 
           <Header
@@ -90,8 +98,6 @@ function App() {
             </div>
           </section>
 
-          <Divider />
-
           <section id="projects">
             <div className="container">
               <h1 className="title">Projects</h1>
@@ -99,6 +105,7 @@ function App() {
               <VerticalTimeline>
                 <Project
                   title="Study Maths Smarter Full Stack Project"
+                  link="https://github.com/yulin-physics/bnta-studyMathsSmarter-backend"
                   place="Bright Network"
                   date="October 2021"
                   description="Study Maths Smarter is website where students can take quiz of varied difficulty and find out their strengths and weaknesses. The website then prompts the students to register and save quiz results. I self leanrt redux and basic authentication, successfully implemented the login system and transfer of states on frontend"
@@ -110,6 +117,7 @@ function App() {
 
                 <Project
                   title="Bootcamp Backend Project"
+                  link="https://github.com/yulin-physics/bnta-bootcamp-backend"
                   place="Bright Network"
                   date="September 2021"
                   description="Bootcamp is a website with a collection of categorised live courses, where users can add courses to wishlist and submit feedback"
@@ -121,6 +129,7 @@ function App() {
 
                 <Project
                   title="Car Rental CLI Tool"
+                  link="https://github.com/yulin-physics/bnta-car-rental"
                   place="Bright Network"
                   date="August 2021"
                   description="Created a car rental command line management system with tailored options for manager and customers. Managers can add cars, remove cars, check current renting status, users can borrow and return cars"
@@ -132,6 +141,7 @@ function App() {
 
                 <Project
                   title="Games Site Frontend Project"
+                  link="https://github.com/yulin-physics/bnta-yusobya-flappyBird"
                   place="Bright Network"
                   date="July 2021"
                   description="Worked in a team of 4 where we had one afternoon and created a games site under time pressure. I made a modified version of flappy bird based off a Youtube tutorial, improved CSS styling, changed JavaScript parameters and added the start button. My group was selected as the final winner of the hackathon"
@@ -152,5 +162,56 @@ function App() {
     </ThemeProvider>
   );
 }
+
+const GlobalStyles = createGlobalStyle`
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+  }
+
+  body {
+    align-items: center;
+    background: ${({ theme }) => theme.body};
+    color: ${({ theme }) => theme.text};
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    transition: all 0.25s linear;
+  }
+  
+  h1, h3, h5 {
+    color: ${({ theme }) => theme.text};
+  }
+
+  header {
+    background:${({ theme }) => theme.gradient}; 
+    color: ${({ theme }) => theme.text};
+  }
+
+  .jumbotron {
+    background:${({ theme }) => theme.gradient};  
+    color: ${({ theme }) => theme.text};
+  }
+
+  #projects {
+    background:${({ theme }) => theme.background};  
+    color: ${({ theme }) => theme.text};
+  }
+
+  .vertical-timeline-element-content{
+    background:${({ theme }) => theme.timeline};   
+  }
+
+  span.vertical-timeline-element-icon{
+    background:${({ theme }) => theme.timeline} !important;   
+  }
+
+  .card {
+    background:${({ theme }) => theme.timeline} !important;   
+    color: ${({ theme }) => theme.text} !important; 
+  }
+  
+  `;
 
 export default App;

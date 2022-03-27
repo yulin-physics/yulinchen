@@ -5,7 +5,8 @@ function Divider() {
   return (
     <div className="jumbotron text-center jumbotron-custom">
       <div className="container">
-        <h1 className="blink">Scroll Down </h1>
+        <h1 className="blink">Hi there! </h1>
+        <h1 className="blink">Scroll down :)</h1>
         <object type="image/svg+xml" data={svg_pic}></object>
       </div>
     </div>

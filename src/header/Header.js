@@ -10,7 +10,7 @@ function HeaderName(props) {
       <br />
       <div className="p-5 text-center bg-gradient-primary text-white">
         <h1 className="mb-3">
-          <span style={{ color: "#fdd701" }}>$ </span>Yulin Chen
+          <span>$ </span>Yulin Chen
         </h1>
         <div className="mb-3">
           <a
