@@ -1,6 +1,7 @@
 .jumbotron-custom {
   padding: 14rem;
   margin: 0;
+  height:100vh;
 }
 .blink {
   animation: blinker 1s linear infinite;

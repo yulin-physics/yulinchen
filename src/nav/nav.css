@@ -1,3 +1,13 @@
+#git-repo {
+  display: inline;
+  float: right;
+  background: none;
+  padding: 0 0 0 0;
+  border-radius: 50%;
+  height: 1em;
+  width: 1em;
+}
+
 .navbar-custom {
   background-color: #838996;
 }
@@ -19,26 +29,6 @@
   color: black;
 }
 
-/* #about {
-  top: 20px;
-  background-color: #ff8000;
-} */
-
-#blog {
-  top: 80px;
-  background-color: #2196f3;
-}
-
-#projects {
-  top: 140px;
-  background-color: #884dff;
-}
-
-#contact {
-  top: 200px;
-  background-color: #555;
-}
-
 @media only screen and (min-width: 701px) {
   /* hide the hamburger */
   .hamburgerMenu {
@@ -54,7 +44,7 @@
 @media only screen and (max-width: 700px) {
   /* show everything with the hamburger class */
   .hamburgerMenu {
-display: block;
+    display: block;
   }
   /* hide all the nav-buttons */
   .nav-button {

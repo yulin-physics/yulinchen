@@ -1,6 +1,5 @@
 @import "antd/dist/antd.css";
 
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -11,7 +10,7 @@ h1 {
   text-align: center;
   line-height: 40px;
   font-size: 4vw;
-  color: #555;
+  /* color: #555; */
   text-align: center;
-  padding:2rem;
+  padding: 2rem;
 }
