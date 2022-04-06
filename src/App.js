@@ -1,6 +1,5 @@
 import "./App.css";
 import NavBar from "./nav/Nav";
-import About from "./about/About";
 import Project from "./project/Project";
 import Divider from "./divider/Divider";
 import Contact from "./contact/Contact";
@@ -26,6 +25,8 @@ import { lightTheme, darkTheme } from "./theme";
 import { createGlobalStyle } from "styled-components";
 import React, { useState } from "react";
 
+import Board from "./about/Board";
+
 function App() {
   const [theme, setTheme] = useState("light");
   const toggleTheme = () => {
@@ -43,7 +44,7 @@ function App() {
           data-bs-spy="scroll"
           data-bs-target="#navbar"
           data-bs-offset="100"
-          tabindex="0"
+          tabIndex="0"
         >
           <NavBar
             about="#about"
@@ -61,38 +62,40 @@ function App() {
 
           <Divider />
 
-          <section id="about">
-            <div className="container">
-              <About />
+          <section id="about" className="stars">
+            <div className="container twinkling">
+              <div className="clouds">
+                <Board title="About Me" />
 
-              <div className="row">
-                <div className="col-sm-6" align="center">
-                  <Card
-                    title="Programming Languages"
-                    imageSrc1={js_icon}
-                    skill1="JavaScipt"
-                    imageSrc2={java_icon}
-                    skill2="Java"
-                    imageSrc3={python_icon}
-                    skill3="Python"
-                    imageSrc4={golang_icon}
-                    skill4="Go"
-                    other="Other web technologies: HTML & CSS, REACT, REDUX, Spring Boot, REST API, GraphQL, Google Cloud, FileZilla"
-                    protocol="Protocols: HTTP, TCP, FTTP"
-                  />
-                </div>
+                <div className="row">
+                  <div className="col-sm-6" align="center">
+                    <Card
+                      title="Programming Languages"
+                      imageSrc1={js_icon}
+                      skill1="JavaScipt"
+                      imageSrc2={java_icon}
+                      skill2="Java"
+                      imageSrc3={python_icon}
+                      skill3="Python"
+                      imageSrc4={golang_icon}
+                      skill4="Go"
+                      other="Other web technologies: HTML & CSS, REACT, REDUX, Spring Boot, REST API, GraphQL, Google Cloud, FileZilla"
+                      protocol="Protocols: HTTP, TCP, FTTP"
+                    />
+                  </div>
 
-                <div className="col-sm-6" align="center">
-                  <Card
-                    title="Databases"
-                    imageSrc1={postgres_icon}
-                    skill1="PostgreSQL"
-                    imageSrc2={couch_icon}
-                    skill2="Apache CounchDB"
-                    imageSrc3={mongo_icon}
-                    skill3="MongoDB"
-                    imageSrc4={cloud_icon}
-                  />
+                  <div className="col-sm-6" align="center">
+                    <Card
+                      title="Databases"
+                      imageSrc1={postgres_icon}
+                      skill1="PostgreSQL"
+                      imageSrc2={couch_icon}
+                      skill2="Apache CounchDB"
+                      imageSrc3={mongo_icon}
+                      skill3="MongoDB"
+                      imageSrc4={cloud_icon}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -197,7 +200,23 @@ const GlobalStyles = createGlobalStyle`
   #projects {
     background:${({ theme }) => theme.background};  
     color: ${({ theme }) => theme.text};
+    overflow-anchor: none;
   }
+ 
+  // .stars {
+  //   background: ${({ theme }) => theme.star}; 
+  //   z-index:0;
+  // }
+
+  .twinkling{
+    background: ${({ theme }) => theme.twinkling};
+    z-index:1;
+    animation:move-twink-back 200s linear infinite;
+  }
+
+  // #about div div{
+  //   background:${({ theme }) => theme.transparent}; 
+  // }
 
   .vertical-timeline-element-content{
     background:${({ theme }) => theme.timeline};   
