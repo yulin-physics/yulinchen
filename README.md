@@ -4,6 +4,10 @@
 
 This project was built with REACT framework, an one page website about me. Showcasing projects I was working on between July and October 2021. It has a lot of css not in use, needs some clean up of the code.
 
+Taken Zooper template
+
+Embed Dev.to blogs 
+
 ## Installations
 
 - git

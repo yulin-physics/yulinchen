@@ -1,0 +1,8 @@
+{
+  "name": "Bitop",
+  "url": "https://github.com/yulin-physics/bitop",
+  "description": "Go package implements simple functions to manipulate bits, mimicking package strings.",
+  "thumbnail": "/projects/bitop.jpeg",
+  "status": "Active",
+  "opensource": true
+}
