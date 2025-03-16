@@ -4,10 +4,6 @@
 
 This project was built with Vue and Nuxt framework, using [Zooper](https://github.com/fayazara/zooper) template as a starting point and embeded Dev-to blogs. 
 
-Taken Zooper template
-
-Embed Dev.to blogs 
-
 ## Installations
 
 - git
