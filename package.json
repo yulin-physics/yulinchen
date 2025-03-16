@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "homepage": "https://yulin-physics.github.io/yulinchen",
   "scripts": {
-    "build": "nuxt build",
+    "build": "NODE_OPTIONS=--max_old_space_size=8192 nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
