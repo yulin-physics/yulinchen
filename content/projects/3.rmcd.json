@@ -1,0 +1,9 @@
+{
+    "name": "Combine Orders Tool",
+    "url": "https://github.com/yulin-physics/rmcd-combine-orders-tool",
+    "description": "Electron app for Click & Drop Combine Duplicate Orders",
+    "thumbnail": "/projects/rmcd.png",
+    "status": "WIP",
+    "opensource": true
+  }
+  

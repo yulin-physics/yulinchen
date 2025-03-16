@@ -1,8 +1,8 @@
-# Personal Profile Page (First React Project)
+# Personal Profile Page (First Vue Project)
 
 # https://yulin-physics.github.io/yulinchen
 
-This project was built with REACT framework, an one page website about me. Showcasing projects I was working on between July and October 2021. It has a lot of css not in use, needs some clean up of the code.
+This project was built with Vue and Nuxt framework, using [Zooper](https://github.com/fayazara/zooper) template as a starting point and embeded Dev-to blogs. 
 
 ## Installations
 
@@ -10,9 +10,9 @@ This project was built with REACT framework, an one page website about me. Showc
 - npm
 - node
 
-## Deploy React App to GitHub Pages
+## Deploy App to GitHub Pages
 
-1. Create an React app written in JavaScript
+1. Create an React (or Vue) app
    ```
    npx create-react-app my_first_app
    ```
@@ -46,24 +46,25 @@ This project was built with REACT framework, an one page website about me. Showc
    npm run deploy
    ```
    runs the `predeploy` and `deploy` scripts in `package.json`.
-   Under the hood, the predeploy script will build a distributable version of the React app and store it in a folder named build. Then, the deploy script will push the contents of that folder to the gh-pages branch of the GitHub repository. <a href="https://github.com/gitname/react-gh-pages">source</a>
+   Under the hood, the predeploy script will build a distributable version of the app and store it in a folder named build. Then, the deploy script will push the contents of that folder to the gh-pages branch of the GitHub repository. <a href="https://github.com/gitname/react-gh-pages">source</a>
 
 ## Available Scripts
 
 In the project directory, you can run:  
- `npm start`\
+ `npm run dev`\
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-`npm test`  
-Launches the test runner in the interactive watch mode.
-
 `npm run build`  
-Builds the app for production to the `build` folder.\
+Builds the app for development in `.nuxt` folder and for production to the `.output` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 ## References
 
-<a href="https://css-tricks.com/a-dark-mode-toggle-with-react-and-themeprovider/"> A Dark Mode Toggle with React and ThemeProvider </a>
+Nuxt 3 dynamic routing and pages based on file structure and paths
 
-<a href="https://dev.to/matjones/how-to-embed-your-dev-to-blog-in-your-personal-website-4l81"> How to Embed Your Dev.to Blog in Your Personal Website </a>
+<a href="https://dev.to/guilhermecheng/how-to-use-devto-api-4p65">How to use Dev-to API</a>
+
+<a href="https://stackoverflow.com/questions/42749973/what-does-the-mean-inside-an-import-path"> What does the @ mean inside an import path? </a>
+
+<a href="https://vuejs.org/api/composition-api-lifecycle">Composition API: lifecyle hooks</a>
