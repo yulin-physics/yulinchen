@@ -35,17 +35,17 @@ export default defineNuxtConfig({
         {
           rel: "me",
           type: "image/png",
-          href: (import.meta.env.NUXT_APP_BASE_URL ? import.meta.env.NUXT_APP_BASE_URL : "/") + "rmcd.png"
+          href: (import.meta.env.NUXT_APP_BASE_URL ? import.meta.env.NUXT_APP_BASE_URL : "/") + "projects/rmcd.png"
         },
         {
           rel: "me",
           type: "image/jpeg",
-          href: (import.meta.env.NUXT_APP_BASE_URL ? import.meta.env.NUXT_APP_BASE_URL : "/") + "bitop.jpeg"
+          href: (import.meta.env.NUXT_APP_BASE_URL ? import.meta.env.NUXT_APP_BASE_URL : "/") + "projects/bitop.jpeg"
         },
         {
           rel: "me",
           type: "image/jpeg",
-          href: (import.meta.env.NUXT_APP_BASE_URL ? import.meta.env.NUXT_APP_BASE_URL : "/") + "houserota.jpeg"
+          href: (import.meta.env.NUXT_APP_BASE_URL ? import.meta.env.NUXT_APP_BASE_URL : "/") + "projects/houserota.jpeg"
         },
       ],
     },
