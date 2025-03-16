@@ -10,9 +10,6 @@ export default defineNuxtConfig({
     "@nuxthq/studio",
     "@vueuse/nuxt"
   ],
-  image: {
-    provider: 'ipx'
-  },
   ui: {
     icons: ["heroicons", "lucide"],
   },
@@ -33,7 +30,22 @@ export default defineNuxtConfig({
         {
           rel: "icon",
           type: "image/x-icon",
-          href: (import.meta.env.NUXT_APP_BASE_URL ? import.meta.env.NUXT_APP_BASE_URL : "/") + "favicon.ico?x=2"
+          href: (import.meta.env.NUXT_APP_BASE_URL ? import.meta.env.NUXT_APP_BASE_URL : "/") + "favicon.ico"
+        },
+        {
+          rel: "me",
+          type: "image/png",
+          href: (import.meta.env.NUXT_APP_BASE_URL ? import.meta.env.NUXT_APP_BASE_URL : "/") + "rmcd.png"
+        },
+        {
+          rel: "me",
+          type: "image/jpeg",
+          href: (import.meta.env.NUXT_APP_BASE_URL ? import.meta.env.NUXT_APP_BASE_URL : "/") + "bitop.jpeg"
+        },
+        {
+          rel: "me",
+          type: "image/jpeg",
+          href: (import.meta.env.NUXT_APP_BASE_URL ? import.meta.env.NUXT_APP_BASE_URL : "/") + "houserota.jpeg"
         },
       ],
     },
