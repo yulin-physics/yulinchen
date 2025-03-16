@@ -10,9 +10,9 @@ This project was built with Vue and Nuxt framework, using [Zooper](https://githu
 - npm
 - node
 
-## Deploy React App to GitHub Pages
+## Deploy App to GitHub Pages
 
-1. Create an React app written in JavaScript
+1. Create an React (or Vue) app
    ```
    npx create-react-app my_first_app
    ```
@@ -46,20 +46,17 @@ This project was built with Vue and Nuxt framework, using [Zooper](https://githu
    npm run deploy
    ```
    runs the `predeploy` and `deploy` scripts in `package.json`.
-   Under the hood, the predeploy script will build a distributable version of the React app and store it in a folder named build. Then, the deploy script will push the contents of that folder to the gh-pages branch of the GitHub repository. <a href="https://github.com/gitname/react-gh-pages">source</a>
+   Under the hood, the predeploy script will build a distributable version of the app and store it in a folder named build. Then, the deploy script will push the contents of that folder to the gh-pages branch of the GitHub repository. <a href="https://github.com/gitname/react-gh-pages">source</a>
 
 ## Available Scripts
 
 In the project directory, you can run:  
- `npm start`\
+ `npm run dev`\
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-`npm test`  
-Launches the test runner in the interactive watch mode.
-
 `npm run build`  
-Builds the app for production to the `build` folder.\
+Builds the app for development in `.nuxt` folder and for production to the `.output` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 ## References
