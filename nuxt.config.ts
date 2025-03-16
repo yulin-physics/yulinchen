@@ -10,6 +10,9 @@ export default defineNuxtConfig({
     "@nuxthq/studio",
     "@vueuse/nuxt"
   ],
+  image: {
+    provider: 'ipx'
+  },
   ui: {
     icons: ["heroicons", "lucide"],
   },
@@ -23,6 +26,16 @@ export default defineNuxtConfig({
       bodyAttrs: {
         class: "antialiased bg-gray-50 dark:bg-black min-h-screen",
       },
+      link: [
+        // https://nuxt.com/deploy/github-pages and https://vite.dev/guide/env-and-mode.html for details.
+        // !!! Make use of compile time environment var NUXT_APP_BASE_URL to work for GitHub Pages deployments as well.
+        // Assumption: favicon files in ~/public as ~/public/favicon.ico, ~/public/favicon-32x32.png etc.:
+        {
+          rel: "icon",
+          type: "image/x-icon",
+          href: (import.meta.env.NUXT_APP_BASE_URL ? import.meta.env.NUXT_APP_BASE_URL : "/") + "favicon.ico?x=2"
+        },
+      ],
     },
   },
   content: {
