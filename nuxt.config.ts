@@ -36,4 +36,11 @@ export default defineNuxtConfig({
       Inter: [400, 500, 600, 700, 800, 900],
     },
   },
+  vite: {
+    server: {
+      hmr: {
+        clientPort: 3000
+      },
+    },
+  }
 });

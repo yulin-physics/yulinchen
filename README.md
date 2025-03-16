@@ -1,12 +1,8 @@
-# Personal Profile Page (First React Project)
+# Personal Profile Page (First Vue Project)
 
 # https://yulin-physics.github.io/yulinchen
 
-This project was built with REACT framework, an one page website about me. Showcasing projects I was working on between July and October 2021. It has a lot of css not in use, needs some clean up of the code.
-
-Taken Zooper template
-
-Embed Dev.to blogs 
+This project was built with Vue and Nuxt framework, using [Zooper](https://github.com/fayazara/zooper) template as a starting point and embeded Dev-to blogs. 
 
 ## Installations
 
@@ -68,6 +64,10 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 ## References
 
-<a href="https://css-tricks.com/a-dark-mode-toggle-with-react-and-themeprovider/"> A Dark Mode Toggle with React and ThemeProvider </a>
+Nuxt 3 dynamic routing and pages based on file structure and paths
 
-<a href="https://dev.to/matjones/how-to-embed-your-dev-to-blog-in-your-personal-website-4l81"> How to Embed Your Dev.to Blog in Your Personal Website </a>
+<a href="https://dev.to/guilhermecheng/how-to-use-devto-api-4p65">How to use Dev-to API</a>
+
+<a href="https://stackoverflow.com/questions/42749973/what-does-the-mean-inside-an-import-path"> What does the @ mean inside an import path? </a>
+
+<a href="https://vuejs.org/api/composition-api-lifecycle">Composition API: lifecyle hooks</a>

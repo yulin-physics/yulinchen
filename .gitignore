@@ -19,8 +19,6 @@
 .env.production.local
 
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
 
 # Nuxt dev/build outputs
@@ -30,9 +28,6 @@ yarn-error.log*
 .nitro
 .cache
 dist
-
-# Node dependencies
-node_modules
 
 # Logs
 logs
